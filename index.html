@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>حكاية — مكانك للكتابة</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<aside>
+  <h1>حكاية</h1>
+  <button id="new" class="primary">قصة جديدة</button>
+  <ul id="list"></ul>
+</aside>
+<main>
+  <div class="tools">
+    <button id="spark">أعطني فكرة</button>
+    <button id="focus">وضع التركيز</button>
+    <button id="export">حفظ كملف</button>
+    <button id="del">حذف القصة</button>
+  </div>
+  <p id="note" hidden></p>
+  <input id="title" placeholder="عنوان قصتك" aria-label="عنوان القصة">
+  <textarea id="body" placeholder="ابدأ من هنا… جملة واحدة تكفي." aria-label="نص القصة"></textarea>
+  <footer>
+    <span id="stats"></span>
+    <label>هدفي <input id="goal" type="number" min="50" step="50"> كلمة</label>
+    <div class="meter" aria-hidden="true"><i id="fill"></i></div>
+  </footer>
+  <button id="back" class="ghost" hidden>الخروج من التركيز</button>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
